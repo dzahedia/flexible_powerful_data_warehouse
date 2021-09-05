@@ -9,13 +9,13 @@
 - install requirements
 - add .env file to include raw_data, dwh_data and gold_data locations (can be HDFS or local file system or other system that can be connected with Spark)
 
-Data are available monthly and you can use batch_processing.py to **Extract**, **Load** and **Transfor**m data for any period of time including a single month.
-
-
-
 **For example:**
 
-To use the pipeline implemented here, this command would get the data from 2018-02 to 2020-03.
+New York Taxis data are available monthly with varying schema.
+
+The implemented pipeline here can be used to **Extract**, **Load** and **Transfor**m data for any period of time including a single month.
+
+To use the pipeline, the following command would get the data from 2018-02 to 2020-03.
 
 `python batch_processing.py --start_year 2018 --start_month 2 --end_year 2020 --end_month 3 --job_type t
 `
