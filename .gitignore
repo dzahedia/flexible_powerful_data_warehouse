@@ -1,0 +1,10 @@
+venv/
+
+raw_data/
+dwh_data/
+gold_data/
+
+.idea/
+
+
+.env
