@@ -57,7 +57,7 @@ if __name__ == '__main__':
                 print('Starting load for ', year + '-' + month)
                 process = subprocess.Popen(["python", "load.py"])
                 process.wait()
-            else:
+            elif args.job_type == 't':
                 print('Starting extract for ', year + '-' + month)
                 process = subprocess.Popen(["python", "extract.py", year, month])
                 process.wait()
@@ -67,6 +67,8 @@ if __name__ == '__main__':
                 print('Starting transform for ', year + '-' + month)
                 process = subprocess.Popen(["python", "transform.py"])
                 process.wait()
+            else:
+                raise Exception('Wrong job_type; job_type can be e, l or t. Please change the argument accordingly.')
             print('Done ' + year + '-' + month)
             print('-----------')
 
