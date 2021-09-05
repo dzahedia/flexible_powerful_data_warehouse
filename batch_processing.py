@@ -48,6 +48,7 @@ if __name__ == '__main__':
 
     for k in sorted([int(kk) for kk in jobs.keys()]):
         for m in jobs[str(k)]:
+            newjobTime = datetime.now()
             year= str(k)
             month =  m
             if args.job_type == 'e':
@@ -74,6 +75,7 @@ if __name__ == '__main__':
             else:
                 raise Exception('Wrong job_type; job_type can be e, l or t. Please change the argument accordingly.')
             print('Done ' + year + '-' + month)
+            print('Job time: ', datetime.now() - newjobTime)
             print('-----------')
     print('Time to complete:')
     print(st)
