@@ -1,6 +1,8 @@
 import argparse
 import subprocess
 
+from datetime import datetime
+
 if __name__ == '__main__':
     # Example run:
     # python batch_processing.py --start_year 2018 --start_month 2 --end_year 2020 --end_month 3 --job_type e
@@ -12,6 +14,8 @@ if __name__ == '__main__':
     parser.add_argument("--end_month", help="Start year for batch job.", type=int, required=True)
 
     args = parser.parse_args()
+
+    start = datetime.now()
 
     months = ['01', '02', '03', '04', '05', '06', '07', '08', '09', '10', '11', '12']
     if args.start_year == args.end_year:
@@ -71,6 +75,9 @@ if __name__ == '__main__':
                 raise Exception('Wrong job_type; job_type can be e, l or t. Please change the argument accordingly.')
             print('Done ' + year + '-' + month)
             print('-----------')
+    print('Time to complete:')
+    print(st)
+    print(datetime.now() - start)
 
 
 
