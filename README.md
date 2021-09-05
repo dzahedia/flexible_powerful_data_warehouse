@@ -11,8 +11,14 @@
 
 Data are available monthly and you can use batch_processing.py to **Extract**, **Load** and **Transfor**m data for any period of time including a single month
 
-**for example:**
+The core of this app are the functions in the app_util: the pipeline implemented here can be easily modified to work with: 
 
+    - Apache Airflow
+    - Micro services app
+
+**For example:**
+
+To use the pipeline implemented here: 
 This command: 
 
 `python batch_processing.py --start_year 2018 --start_month 2 --end_year 2020 --end_month 3 --job_type t
@@ -27,6 +33,5 @@ job_type can be **_e_** for only extract, **_l_** for **_e_** and load and **_t_
 - Because all the steps are seperate, one can easily add new transforms, for example. 
 - Or, one can add new dataset like weather data and join it with a new transform step. 
 
-    
 
   
