@@ -1,1 +1,1 @@
-{"files": ["raw_data/yellow_tripdata_2019-02.csv", "raw_data/green_tripdata_2019-02.csv"], "year": "2019", "month": "02", "updated": "2021-09-05T19:45:42.045900", "loaded": true}
+{"files": ["raw_data/yellow_tripdata_2018-11.csv", "raw_data/green_tripdata_2018-11.csv"], "year": "2018", "month": "11", "updated": "2021-09-05T20:35:36.973623", "loaded": true}

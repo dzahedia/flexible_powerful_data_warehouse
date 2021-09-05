@@ -11,7 +11,7 @@
 
 **For example:**
 
-New York Taxis data are available monthly with varying schema.
+New York Taxis data are available monthly with varying schema. This is not a production pipeline! Just a proof of concept; so no validation steps or good logs (a sample logs file is provided)! 
 
 The implemented pipeline here can be used to **Extract**, **Load** and **Transfor**m data for any period of time including a single month.
 

@@ -11,33 +11,38 @@ Starting extract for  2018-08
 200 Saved raw_data/yellow_tripdata_2018-08.csv
 200 Saved raw_data/green_tripdata_2018-08.csv
 200 Saved last_extracted_job.json
+
 Starting load for  2018-08
-21/09/05 20:00:54 WARN Utils: Your hostname, Zahedi-MacBook-Pro.local resolves to a loopback address: 127.0.0.1; using 192.168.0.129 instead (on interface en0)
-21/09/05 20:00:54 WARN Utils: Set SPARK_LOCAL_IP if you need to bind to another address
-21/09/05 20:00:55 WARN NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
-Using Spark's default log4j profile: org/apache/spark/log4j-defaults.properties
-Setting default log level to "WARN".
-To adjust logging level use sc.setLogLevel(newLevel). For SparkR, use setLogLevel(newLevel).
 200 yellow2018-08 load completeded.
 200 green2018-08 load completeded.
 200 Saved last_extracted_job.json
 200 Saved last_loaded_job.json
+
 Starting transform for  2018-08
 starting new transfer ...
-21/09/05 20:01:29 WARN Utils: Your hostname, Zahedi-MacBook-Pro.local resolves to a loopback address: 127.0.0.1; using 192.168.0.129 instead (on interface en0)
-21/09/05 20:01:29 WARN Utils: Set SPARK_LOCAL_IP if you need to bind to another address
-21/09/05 20:01:30 WARN NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
-Using Spark's default log4j profile: org/apache/spark/log4j-defaults.properties
-Setting default log level to "WARN".
-To adjust logging level use sc.setLogLevel(newLevel). For SparkR, use setLogLevel(newLevel).
 all loaded data length:  100465130
 new loaded data length:  8515510
 Transforming and saving results...
 200 2018-08-01 is transformed and saved.
 200 Saved last_loaded_job.json
+
 Done 2018-08
 Job time:  0:11:03.164836
 -----------
 Starting extract for  2018-09
-....
-
+.
+.
+Done 2018-09
+Job time:  0:11:11.111218
+.
+.
+Done 2018-10
+Job time:  0:12:20.156394
+.
+.
+Done 2018-11
+Job time:  0:11:44.367358
+-----------
+Time to complete:
+2018-08 ; 2018-09 ; 2018-10 ; 2018-11 ;
+0:46:22.491284

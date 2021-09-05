@@ -44,7 +44,7 @@ if __name__ == '__main__':
         print('Exiting!')
         exit(0)
     else:
-        print('\nStarting the jobs: one after another ...\n')
+        print('\nStarting the jobs: one after another ...\n ... Make sure your machine is plugged in\n')
 
     for k in sorted([int(kk) for kk in jobs.keys()]):
         for m in jobs[str(k)]:
