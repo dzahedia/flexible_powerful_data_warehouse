@@ -1,5 +1,5 @@
-**A data warehouse implemented with New York taxis data**
-
+**A data warehouse implemented with Spark, Parquet and HDFS** 
+    - with an example from New York taxis data
 - flexibly handles the evolving data schema
 - quickly handles complex queries 
 - scalably extends
