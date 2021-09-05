@@ -50,7 +50,6 @@ if __name__ == '__main__':
                 print('Starting extract for ', year + '-' + month)
                 process = subprocess.Popen(["python", "extract.py" , year , month])
                 process.wait()
-                # bash run: python extract.py year month
             elif args.job_type == 'l':
                 print('Starting extract for ', year + '-' + month)
                 process = subprocess.Popen(["python", "extract.py", year, month])

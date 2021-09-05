@@ -9,7 +9,7 @@
 - install requirements
 - add .env file to include raw_data, dwh_data and gold_data locations (can be HDFS or local file system or other system that can be connected with Spark)
 
-Data are available monthly and you can use batch_processing.py to Extract, Load and Transform data for any period of time including a single month
+Data are available monthly and you can use batch_processing.py to **Extract**, **Load** and **Transfor**m data for any period of time including a single month
 
 **for example:**
 
