@@ -90,16 +90,6 @@ def transformMonth(spark, month, dwh_data, gold_data):
         return {'status': 500, 'msg': e}
     return {'status': 200, 'msg': f'{month} is transformed and saved.'}
 
-def transformAVRO(spark, dwh_data, filter_statement, avro_data, schema):
-    """
-    :param spark:
-    :param dwh_data:
-    :param filter_statement: a string filter including the field and condition like: 'hour=9'
-    :param avro_data:
-    :param schema: avro schema with fields present in the dwh_data table
-    :return:
-    """
-    pass
 
 def save_json(dict, filename):
     with open(filename, 'w') as f:
