@@ -1,0 +1,14 @@
+
+Number of rows:  127505323
+
+# query to get the average trip distance for color and hour
+query: df.select(['color', 'hour', 'trip_distance']).groupby(['color', 'hour']).avg('trip_distance').orderBy(['hour', 'color']).show(50)
+time to query:  0:00:04.350483
+
+# query to get the avg passenger count for year and day of the week (year is being drived from date at the time of query)
+query: df.select(year("date").alias('year'), 'day', 'passenger_count').groupby(['year', 'day']).avg('passenger_count').orderBy(['year', 'day']).show()
+time to query:  0:00:04.434188
+
+# query to get top three busy hours
+query: df.select('VendorID', 'hour').groupby('hour').count().orderBy(col('count').desc()).show(3)
+time to query:  0:00:01.378725

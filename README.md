@@ -1,7 +1,7 @@
 **A data warehouse implemented with Spark, Parquet and HDFS** 
     - with an example from New York taxis data
 - flexibly handles the evolving data schema
-- quickly handles complex queries 
+- quickly handles complex queries (queriesLog.txt)
 - scalably extends
 
 
@@ -11,7 +11,7 @@
 
 **For example:**
 
-New York Taxis data are available monthly with varying schema. This is not a production pipeline! Just a proof of concept; so no validation steps or good logs (a sample logs file is provided)! 
+New York Taxis data are available monthly with varying schema. This is not a production pipeline! Just a proof of concept; so no validation steps or good logs (sampleLog.txt file is provided)! 
 
 The implemented pipeline here can be used to **Extract**, **Load** and **Transfor**m data for any period of time including a single month.
 

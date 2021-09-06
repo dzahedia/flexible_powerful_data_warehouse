@@ -6,11 +6,13 @@ load_dotenv()
 from pyspark.sql import SparkSession
 from pyspark.sql.functions import year, col
 
-dwh_data = os.getenv('gold_data')
+gold_data = os.getenv('gold_data')
 
 spark = SparkSession.builder.master('local[*]').config("spark.driver.memory", "8g").appName('tlc_query').getOrCreate()
 
-df = spark.read.option("mergeSchema", "true").parquet(dwh_data)
+df = spark.read.option("mergeSchema", "true").parquet(gold_data)
+
+print('Number of rows: ', df.count())
 
 # query to get the average trip distance for color and hour
 start_time = datetime.now()
